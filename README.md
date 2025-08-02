@@ -30,7 +30,3 @@ You can view the live demo here:
 └── /assets or /images # Image assets (e.g., product photos, logos)
 
 Thank you for checking out Greenden!
-
-## 📁 Repository Structure
-
-# Greenden-Tailwind
