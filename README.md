@@ -1,32 +1,45 @@
-# GREENDEN 🌿
+# 🌿 GREENDEN
 
-**Greenden** is a clean, responsive plant-selling website built with **HTML** and **Tailwind CSS**, offering an engaging and visually appealing experience for plant lovers.
+**Greenden** is a clean, responsive plant-selling website built using **HTML**, **Tailwind CSS**, and **JavaScript**. It offers a visually appealing and interactive experience for plant lovers.
+
+---
 
 ## ⭐ Features
 
-- **Fully Responsive Design** — optimised for mobile, tablet, and desktop.
-- **Modern Layout with Tailwind CSS** — utility-first styling for speed and consistency.
-- **Product Showcase** — grid-based display of plants with images, names, and prices.
-- **Customer Reviews / Testimonials** — building trust with user feedback.
-- **Contact Page / Form** — allows visitors to get in touch easily.
+- 🌱 **Fully Responsive Design** — Optimized for mobile, tablet, and desktop.
+- ⚡ **Modern Layout with Tailwind CSS** — Utility-first styling for rapid development.
+- 🛒 **Product Showcase** — Grid-based layout of plants with images, names, and prices.
+- 🔍 **Interactive Search Bar** — Real-time filtering of products using JavaScript.
+- 📱 **Responsive Navbar** — Mobile-friendly navigation with hamburger menu.
+- 💬 **Customer Reviews / Testimonials** — Builds trust with real feedback.
+- 📬 **Contact Page / Form** — Lets visitors easily get in touch.
+
+---
 
 ## 🔧 Technologies Used
 
-- **HTML5** — semantic structure and clean markup  
-- **Tailwind CSS** — fast, utility-based styling  
-- *(Optional)* **JavaScript** — for interactivity like search filters or navbar toggles
+- `HTML5` — Semantic and clean structure  
+- `Tailwind CSS` — Utility-first CSS framework  
+- `JavaScript` — For search filtering and navbar interactivity
 
-## 🖥️ Demo
+---
 
-You can view the live demo here:  
-`https://muhammadhuaadhil.github.io/Greenden-Tailwind/`
+## 🖥️ Live Demo
 
-## 📁 Repository Structure
+👉 [**View Live Demo**](https://muhammadhuaadhil.github.io/Greenden-Tailwind/)
 
-├── index.html # Home / landing page
-├── product.html # Product listing page
-├── contact.html # Contact form page
-├── tailwind.config.js # Tailwind CSS configuration
-└── /assets or /images # Image assets (e.g., product photos, logos)
+---
 
-Thank you for checking out Greenden!
+## 📁 Project Structure
+
+```text
+Greenden/
+├── index.html           # Home / Landing page
+├── product.html         # Product listing page
+├── contact.html         # Contact form page
+├── index.js             # JavaScript for navbar & home interactions
+├── product.js           # JavaScript for product search functionality
+├── contact.js           # JavaScript for contact page (optional)
+├── tailwind.config.js   # Tailwind CSS configuration
+└── /assets or /images   # Image assets (e.g., product photos, logos)
+
