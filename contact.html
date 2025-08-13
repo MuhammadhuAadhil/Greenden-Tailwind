@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenden:Contact</title>
+    <title>Greenden:contact</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,7 +22,7 @@
             GREENDEN
         </h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -34,6 +40,28 @@
         </ul>
     </nav>
 
+   
+    <!-- Side navbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 tranistion-all duration-1000" style="width:50%; height:100vh; right:-50%;">
+      <div class="text-right p-5">
+        <p id="closenav" class="cursor-pointer inline p-1">X</p>
+      </div>  
+      <ul class="flex flex-col gap-5 pl-10 text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+             <hr class="w-2/3 border-gray-500">
+            <li>
+                <a href="./product.html" class="hover:underline hover:text-black">Products</a>
+            </li >
+             <hr class="w-2/3 border-gray-500">
+            <li>
+                <a href="./contact.html" class="hover:underline hover:text-black">Contact</a>
+            </li>
+        </ul>
+     </section>
+
+     
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-black-800 dark:text-white">Contact Us
@@ -63,7 +91,7 @@
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="Leave a comment..."></textarea>
                 </div>
-                <button type="submit" class="font-medium text-center text-white bg-black p-3 rounded">Send
+                <button id="search" type="submit" class="font-medium text-center text-white bg-black p-3 rounded hover:underline">Send
                     message</button>
             </form>
         </div>
@@ -77,5 +105,7 @@
         <p>&copy;2025 Greenday.Com</p>
     </footer>
 </body>
+
+<script src="contact.js"></script>
 
 </html>

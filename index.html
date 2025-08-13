@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden:Wide Range Of Artificial And Natural Flowers</title>
-
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
+
     <!-- Navbar -->
 
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
@@ -17,7 +23,7 @@
             GREENDEN
         </h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -35,14 +41,35 @@
         </ul>
     </nav>
 
+    <!-- Side navbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 tranistion-all duration-1000" style="width:50%; height:100vh; right:-50%;">
+      <div class="text-right p-5">
+        <p id="closenav" class="cursor-pointer inline p-1">X</p>
+      </div>  
+      <ul class="flex flex-col gap-5 pl-10 text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+             <hr class="w-2/3 border-gray-500">
+            <li>
+                <a href="./product.html" class="hover:underline hover:text-black">Products</a>
+            </li >
+             <hr class="w-2/3 border-gray-500">
+            <li>
+                <a href="./contact.html" class="hover:underline hover:text-black">Contact</a>
+            </li>
+        </ul>
+     </section>
+
+
     <!-- Header Section -->
 
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
         <div>
-            <p class="mb-4 mt-9 ">We Offer You a Wide Range Of Artificial And Natural Flowers</p>
+            <p class="mb-4 mt-5 ">Nature-Inspired Designs, Handpicked for Every Home!</p>
             <h2 class="text-3xl font-bold mb-5 md:text-5xl">Plants For Your Interior</h2>
             <div>
-                <button class="bg-black rounded p-2 text-white">Shop Now</button>
+                <button class="bg-black rounded p-2 text-white hover:underline">Shop Now</button>
                 <button class="border border-black rounded p-2 hover:bg-white">Watch Video</button>
             </div>
             <p class="mt-5">160+ Plant Species | 100+ Clients</p>
@@ -137,8 +164,8 @@
 
     <section>
         <h1 class="text-3xl font-bold text-center mt-5">Customer Reviews</h1>
-        <div class="flex flex-col gap-5 justify-center text-white m-7">
-            <div class="bg-green-900 container p-5">
+        <div class="flex flex-col gap-5 justify-center text-white m-7 items-center">
+            <div class="bg-green-900 container p-5 ">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad delectus voluptas nesciunt iure est, iste
                     culpa. Porro obcaecati, a provident quisquam assumenda deserunt rem ratione soluta omnis voluptates
                     numquam sint.</p>
@@ -164,7 +191,7 @@
     <section class="text-center">
         <h1 class="text-3xl font-bold mt-5 text-center">Join Our News Letter</h1>
         <p class="mb-4 mt-2">Signup for our email newspaper to get exclusive discounts updates, and more </p>
-        <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+        <input type="text" class="border border-black p-2 m-3 items-center" style="width: 80%;"><br>
         <button class="bg-black text-white p-2 hover:underline rounded">Subscribe</button>
     </section>
 
@@ -175,6 +202,8 @@
         <P>The Standard chunk of lorem ipsum used since the 1500s is reprodused below for those internet</P>
         <p>&copy;2025 Greenday.Com</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
